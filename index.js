@@ -28,7 +28,7 @@ app.post("/webhook", express.json(), (request, response) => {
     function calculation(agent) {
         let num1 = agent.parameters["number_01"];
         let num2 = agent.parameters["number_02"];
-        agent.add(`The sum of ${num1} and ${num2} is: ${num1 + num2}`);
+        agent.add(`The sum of ${num1} and ${num2} is: ${num1+num2}`);
     }
 
     let intentMap = new Map();
